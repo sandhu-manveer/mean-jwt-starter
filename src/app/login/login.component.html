@@ -1,0 +1,26 @@
+<mat-card class="login-container">
+    <mat-card-title>
+        Login
+    </mat-card-title>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        <form role="form" (submit)="login()"><br>
+            <mat-form-field>
+                <input matInput type="text" required [(ngModel)]="user.username" id="username" name="username" >
+                <mat-placeholder>
+                    <mat-icon>face</mat-icon>Username
+                </mat-placeholder>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="password" required [(ngModel)]="user.password" id="password" name="password" >
+                <mat-placeholder>
+                    <mat-icon>lock_open</mat-icon>Password
+                </mat-placeholder>
+            </mat-form-field>
+            <div>
+                <button mat-raised-button type="submit" name="action">LOGIN</button><br><br>
+            </div>
+            <span id="err"><small>{{errorMsg}}</small></span>
+        </form>
+    </mat-card-content>
+</mat-card>

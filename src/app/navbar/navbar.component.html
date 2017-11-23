@@ -1,0 +1,19 @@
+<div class="navbar-container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" >Cisco Dashboard</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul *ngIf="isLoggedIn()" class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/logout">
+                            Log out
+                        </a>
+                    </li>
+                    <li class="separator hidden-lg hidden-md"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
